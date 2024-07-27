@@ -1,0 +1,223 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Top Container */
+.top-container {
+    width: 100%;
+    height: 10vh;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.top-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container img {
+    height: 900px; /* Adjust height as needed */
+    width: 100%;
+}
+
+/* Second Container */
+.second-container {
+    width: 98.8%;
+    height: 5%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.second-container img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.navigation-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.right-buttons {
+    margin-left: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 15%); /* Subtract the combined height of the top and second containers */
+    padding-top: 20px;
+}
+
+.sidebar-content {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sidebar-item button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar-item i {
+    color: black; /* Set icon color to white */
+    font-size: 24px; /* Adjust the icon size if needed */
+    margin-right: 10px; /* Add some space between the icon and the button */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-main-content {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Allow it to grow to fill remaining space */
+    margin-bottom: 20px; /* Add margin to separate it from the grey-container */
+}
+
+.top-main-content .profile-image {
+    width: 100%;
+    height: 60%;
+    margin-top: -130px;
+    object-fit: cover;
+}
+
+.grey-container {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    width: 40%;
+    margin: 25%;
+    margin-top: -130px; /* Adjust to touch the bottom of .top-main-content */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group .text-field {
+    padding: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Media Queries for Specific Widths */
+
+@media screen and (max-width: 250px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}

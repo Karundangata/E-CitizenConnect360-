@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Include Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- Top Container -->
+    <div class="top-container">
+        <div class="logo-container">
+            <img src="back2.png" alt="Logo">
+        </div>
+    </div>
+
+    <!-- Second Container -->
+    <div class="second-container">
+        <img src="gavaa.png" alt="Small Logo">
+        <div class="navigation-container">
+            <div class="left-buttons">
+                <button class="home-button">Home</button>
+                <button class="dashboard-button">Dashboard</button>
+            </div>
+            <div class="right-buttons">
+                <button class="profile-button">Profile</button>
+                <button class="login-button">Login</button>
+                <button class="logout-button">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar and Main Content Container -->
+    <div style="display: flex; height: calc(85%);">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-item">
+                    <a href="index.html">
+                        <i class='bx bx-home'></i>
+                        <button>Home</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="dashboard.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <button>Dashboard</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="profile.html">
+                        <i class='bx bxs-user-account'></i>
+                        <button>Profile</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <span style="font-size: 18px; font-weight: bold;">Roles</span>
+                </div>
+                <div class="sidebar-item">
+                    <a href="pollsuser.html">
+                        <i class='bx bx-plus-circle'></i>
+                        <button>Add Polls</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="document.html">
+                        <i class='bx bx-book'></i>
+                        <button>Add Education <br>Resources</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="incident.html">
+                        <i class='bx bx-error'></i>
+                        <button>Incident</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="views.html">
+                        <i class='bx bx-show'></i>
+                        <button>Views</button>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="chatbot.html">
+                        <i class='bx bx-chat'></i>
+                        <button>ChatBot</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Container in Main Content -->
+            <div class="top-main-content">
+                <img src="back3.jfif" alt="Profile Image" class="profile-image">
+            </div>
+            <!-- Grey Container in Main Content -->
+            <div class="grey-container">
+                <div class="input-group">
+                    <i class='bx bx-conversation'></i>
+                    <span>Full Names</span>
+                    <input type="text" id="full-names" class="text-field" style="border-radius: 5%;">
+                </div>
+                <div class="input-group">
+                    <i class='bx bx-id-card'></i>
+                    <span>ID Number</span>
+                    <input type="text" id="id-number" class="text-field">
+                </div>
+                <div class="input-group">
+                    <i class='bx bx-lock-open'></i>
+                    <span>Password</span>
+                    <input type="password" id="new-password" class="text-field">
+                </div>
+                <div class="input-group">
+                    <i class='bx bxs-user-circle'></i>
+                    <span>Profile Image</span>
+                </div>
+                <div class="button-container">
+                    <button class="edit-button">Edit Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

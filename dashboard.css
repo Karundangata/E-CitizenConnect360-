@@ -1,0 +1,309 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Top Container */
+.top-container {
+    width: 100%;
+    height: 10vh;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.top-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container img {
+    height: 900px; /* Adjust height as needed */
+    width: 100%;
+}
+
+/* Second Container */
+.second-container {
+    width: 98.8%;
+    height: 5%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.second-container img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.navigation-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.right-buttons {
+    margin-left: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 15%); /* Subtract the combined height of the top and second containers */
+    padding-top: 20px;
+}
+
+.sidebar-content {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sidebar-item button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar-item i {
+    color: black; /* Set icon color to white */
+    font-size: 24px; /* Adjust the icon size if needed */
+    margin-right: 10px; /* Add some space between the icon and the button */
+}
+
+/* Main Content */
+.main-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 15%); /* Subtract the combined height of the top and second containers */
+    background-color: black;
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+.first-content {
+    padding: 20px;
+    background-color: white;
+}
+
+.first-content p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.second-content {
+    display: flex;
+    height: 60%;
+}
+
+.half-content {
+    width: 50%;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Media Queries for Specific Widths */
+
+@media screen and (max-width: 250px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+
+@media screen and (max-width: 480px) {
+    .top-container {
+        height: 8vh;
+    }
+
+    .second-container {
+        height: 6vh;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .navigation-container {
+        flex-direction: column;
+    }
+
+    .left-buttons,
+    .right-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-top: 10px;
+    }
+
+    .sidebar-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .sidebar-item {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .first-content {
+        padding: 10px;
+    }
+
+    .second-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .half-content {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

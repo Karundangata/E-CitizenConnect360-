@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header container */
+.header-container {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-container .logo {
+    height: 8vh;
+}
+
+.header-container .home-button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 3cm; /* Adjusted margin to 3cm */
+}
+
+.header-container .register-button,
+.header-container .login-button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.header-container .right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Main container */
+.main-container {
+    background-color: green;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 0 5%;
+}
+
+.left-container,
+.right-container {
+    width: 35%;
+    height: 77vh; /* Height increased by 10% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.left-container {
+    background-color: #ccc; /* Add background color to see the container boundaries */
+}
+
+.left-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.right-container {
+    background-color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.right-container p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-container input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Media Queries for Specific Widths */
+@media screen and (max-width: 250px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .top-container,
+    .second-container,
+    .sidebar,
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .header-container {
+        height: 8vh;
+    }
+
+    .main-container {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .right-container form {
+        gap: 5px;
+    }
+
+    .right-container input[type="password"] {
+        padding: 8px;
+    }
+
+    .submit-button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}

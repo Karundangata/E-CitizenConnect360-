@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header container -->
+    <div class="header-container">
+        <img src="gavaa.png" alt="Logo" class="logo">
+        <button class="home-button">Home</button>
+        <div class="right-buttons">
+            <button class="register-button">Register</button>
+            <button class="login-button">Login</button>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- Left container -->
+        <div class="left-container">
+            <img src="back2.png" alt="Side Image">
+        </div>
+
+        <!-- Right container -->
+        <div class="right-container">
+            <div class="form-container">
+                <h2>LOGIN PAGE</h2>
+                <form id="loginForm">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox" class="remember-me">
+                            Remember me!
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="button" class="submit-button" onclick="validateForm()">Login</button>
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

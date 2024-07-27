@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="forgot.css"> <!-- Include the forgot.css file here -->
+</head>
+<body>
+    <div class="header-container">
+        <img src="gavaa.png" alt="Logo" class="logo">
+        <button class="home-button">Home</button>
+        <div class="right-buttons">
+            <button class="register-button">Register</button>
+            <button class="login-button">Login</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="left-container">
+            <img src="back2.png" alt="Forgot Password Image">
+        </div>
+        <div class="right-container">
+            <h2><b>Reset account password</b></h2>
+            <p>Enter a new password</p>
+            <form id="forgot-form" onsubmit="return validateForgotForm()">
+                <input type="password" id="new-password" placeholder="New Password" required>
+                <input type="password" id="confirm-new-password" placeholder="Confirm New Password" required>
+                <button type="submit" class="submit-button">Reset Password</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="forgot.js"></script>
+</body>
+</html>

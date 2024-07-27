@@ -1,0 +1,300 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Container Styles */
+.top-container {
+    height: 10vh;
+    overflow: hidden;
+}
+
+.top-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Second Container Styles */
+.second-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+}
+
+.second-container img {
+    height: 30px;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-buttons button,
+.right-buttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.left-buttons button:hover,
+.right-buttons button:hover {
+    background-color: black;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: green;
+    color: white;
+    width: 200px;
+    display: flex;
+    height: 725px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 90px;
+    height: 700px;
+}
+
+.sidebar-item {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.sidebar-item a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item a i {
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+.sidebar-item a button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar-item a button:hover {
+    color: #ddd;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #eee;
+    height: 725px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content {
+    width: 60%;
+    height: 95%;
+}
+
+.left-content h2 {
+    margin-bottom: 20px;
+
+}
+
+.view-container {
+    display: block;
+    gap: 90px;
+}
+
+.view-item {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.view-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Right Content Styles */
+.right-content {
+    width: 35%;
+    height: 95%;
+}
+
+.right-content h2 {
+    margin-bottom: 20px;
+}
+
+.summary-container {
+    width: 100%;
+}
+
+.summary-item {
+    background-color: white;
+    padding: 20px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.summary-box input[type="text"] {
+    border: none;
+    outline: none;
+    width: calc(100% - 40px);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.summary-box i {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* @media queries for responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .view-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .view-item {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-item {
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top-container {
+        height: 8vh;
+    }
+
+    .second-container {
+        height: 6vh;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    .navigation-container {
+        flex-direction: column;
+    }
+
+    .left-buttons,
+    .right-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-top: 10px;
+    }
+
+    .sidebar-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .sidebar-item {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+        height: auto;
+    }
+}

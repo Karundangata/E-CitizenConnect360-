@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Containers */
+.top-container,
+.middle-container,
+.heading-container,
+.paragraph-container,
+.bottom-container {
+    width: 100%;
+}
+
+.top-container {
+    height: 10vh;
+    overflow: hidden;
+}
+
+.top-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.middle-container {
+    height: 25vh;
+    position: relative;
+}
+
+.middle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nested-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 6vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.nested-container .logo {
+    height: 5vh;
+    width: auto;
+}
+
+.home {
+    margin-left: -80%;
+    /* background-color: black; */
+}
+
+.right-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.heading-container {
+    height: 5vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: -100%;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.heading-container img {
+    height: 80%;
+}
+
+.paragraph-container {
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottom-container {
+    height: 10vh;
+}
+
+.bottom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .nested-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .home {
+        margin-left: 0;
+    }
+
+    .right-buttons {
+        gap: 10px;
+    }
+
+    .heading-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top-container {
+        height: 8vh;
+    }
+
+    .middle-container {
+        height: 20vh;
+    }
+
+    .nested-container {
+        height: auto;
+    }
+
+    .heading-container {
+        height: auto;
+    }
+
+    .paragraph-container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .bottom-container {
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nested-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-buttons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .heading-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .paragraph-container {
+        padding: 5px;
+    }
+}
